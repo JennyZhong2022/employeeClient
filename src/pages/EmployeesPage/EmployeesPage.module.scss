@@ -1,0 +1,67 @@
+.employeesList {
+  font-family: Arial, sans-serif;
+  padding: 20px 150px;
+  @media screen and (max-width: 480px) {
+    padding: 20px 10px;
+  }
+
+  &__header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__navBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0 20px 0;
+  }
+
+  &__title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+  }
+
+  &__subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__instruction {
+    color: #666;
+    font-size: 14px;
+  }
+
+  &__button {
+    background-color: #3681f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #0453c2;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 5px 5px;
+    }
+  }
+  &__loading,
+  &__errorMessage {
+    margin-top: 15vh;
+    text-align: center;
+  }
+
+  &__errorMessage {
+    font-size: large;
+    color: rgb(237, 110, 110);
+  }
+}

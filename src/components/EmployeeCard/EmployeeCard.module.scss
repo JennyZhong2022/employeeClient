@@ -1,0 +1,48 @@
+.employeeCardContainer {
+  padding: 0 50px;
+  @media screen and (max-width: 480px) {
+    padding: 0 30px;
+  }
+
+  .employeeCard {
+    font-family: Arial, sans-serif;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+
+    .employeeInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 5px;
+
+      .name {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .actions {
+        a {
+          color: #3681f3;
+          text-decoration: none;
+          margin-left: 10px;
+          font-size: 0.9em;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .employmentDetails {
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 3px;
+    }
+
+    .email {
+      color: #666;
+      font-size: 0.9em;
+    }
+  }
+}
