@@ -1,17 +1,27 @@
 {
   "routes": [
     {
+      "route": "/assets/*",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=15770000"
+      }
+    },
+    {
       "route": "/*",
       "serve": "/index.html",
       "statusCode": 200
     }
   ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  },
   "mimeTypes": {
     ".js": "application/javascript",
     ".mjs": "application/javascript",
-    ".jsx": "text/jsx",
-    ".ts": "application/typescript",
-    ".tsx": "application/typescript",
-    ".css": "text/css"
+    ".css": "text/css",
+    ".html": "text/html"
+  },
+  "platform": {
+    "apiRuntime": "node:16"
   }
 }

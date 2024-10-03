@@ -151,7 +151,7 @@ const EmployeesPage = () => {
       </div>
 
       <div className={styles.employeesList__navBar}>
-        <SearchBar />
+        {/* <SearchBar /> */}
 
         <div>
           <button

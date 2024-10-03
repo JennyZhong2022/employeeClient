@@ -8,6 +8,7 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./config/vitest-setup.ts",
   },
+  base: "/",
   build: {
     outDir: "dist",
     assetsDir: "assets",
@@ -20,5 +21,4 @@ export default defineConfig({
       },
     },
   },
-  base: "/",
 });
