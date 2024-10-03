@@ -136,7 +136,7 @@ const EmployeesPage = () => {
   return (
     <div className={styles.employeesList}>
       <div className={styles.employeesList__header}>
-        <h1 className={styles.employeesList__title}>Employees' list</h1>
+        <h1 className={styles.employeesList__title}>Employees' list List</h1>
         <div className={styles.employeesList__subheader}>
           <p className={styles.employeesList__instruction}>
             Please click on "Edit" to find more details of each employee
@@ -151,7 +151,7 @@ const EmployeesPage = () => {
       </div>
 
       <div className={styles.employeesList__navBar}>
-        {/* <SearchBar /> */}
+        <SearchBar />
 
         <div>
           <button
